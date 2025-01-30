@@ -1,0 +1,72 @@
+:root { /*representa html na pagina html*/
+    --green:#00ff00;
+    --whit: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: monospace;
+    background: var(--bg);
+    color: var(--fontColor);
+}
+ul {
+    font-family: helvetica;
+} 
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
+}
+/*#msg {
+    font-family: monospace;
+}*/
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--black);
+   /* color: #000000;
+    background: #00FF00;*/
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--white);
+}
+
+* {
+    color:var(--fontColor);
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--btnFontColor);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:focus { 
+    outline-style:none;
+}
+
+
